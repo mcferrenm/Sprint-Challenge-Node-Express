@@ -28,13 +28,21 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+req.headers.authorization, CORS middleware
+
 - [ ] Describe Middleware?
+
+functions that run between other functions, that can be used to modify req and res as they pass through the server. Can be used globally on all routes, locally to single routes, as error handlers. They can be the end of the chain or pass req/res by using next.
 
 - [ ] Describe a Resource?
 
+A resource is anything a server is responsible for providing for a client. They can have many representations.
+
 - [ ] What can the API return to help clients know if a request was successful?
+      Status Code 2xx's
 
 - [ ] How can we partition our application into sub-applications?
+      We can separate servers by route and use middleware locally to that route.
 
 ## Project Setup
 
