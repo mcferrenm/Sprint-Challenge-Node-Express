@@ -22,14 +22,15 @@ class App extends Component {
     });
   };
   render() {
-
     if (!this.state.projects) {
-      return <div>Loading...</div>
+      return <div>Loading...</div>;
     }
     return (
       <div className="App">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
+        <nav>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/projects">Projects</NavLink>
+        </nav>
 
         <Route
           exact
